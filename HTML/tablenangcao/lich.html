@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lịch</title>
     <style>
-        .in {
-            width: 100px;
-        }
-        
-        table {
+        #table-1 {
             text-align: center;
             width: 100%;
         }
         
         th {
-            border: none;
+            width: 100px;
+        }
+        
+        #table-2 {
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+        
+        th {
+            border-color: aliceblue;
+            border: 1px;
         }
         
         td {
-            border: 1px solid: gray;
-            height="50px";
+            border-collapse: collapse;
+            border: 3px solid gray;
             width: 100px;
         }
     </style>
@@ -30,7 +37,7 @@
 
 <body>
     <h1 style="text-align:center;color:blue">Tháng 10 - October</h1>
-    <table border=1px; style="border:gray;">
+    <table id="table-1">
         <tr style="color: white;">
             <th style="background-color:red">C.Nhật</th>
             <th style="background-color:yellow">T.Hai</th>
@@ -40,6 +47,8 @@
             <th style="background-color:yellow">T.Sáu</th>
             <th style="background-color:blue">T.Bảy</th>
         </tr>
+    </table>
+    <table id="table-2">
         <tr>
             <th style="color:red">Sun</th>
             <th>Mon</th>
@@ -95,6 +104,7 @@
             <td style="color:blue">31<sub style="color: black;">14</sub></td>
         </tr>
     </table>
+
 </body>
 
 </html>
